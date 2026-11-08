@@ -31,7 +31,8 @@ the Visualizing Threats project.
 
     load_data.py     starter: load a CSV with csv.DictReader
     clean_data.py    YOU write this (L11): clean the messy values
-    project.py       YOU build this (project days): three charts + analysis
+    project.py       your scratch pad for the project's three charts
+    project_charts.py  the graded charts (you write this in L16)
     data/            the Unit 2 CSV datasets (some have a # comment first line)
     LESSONS/         Unit 2 lesson guides for this repo (L08–L12, L15–L18)
 
@@ -82,7 +83,7 @@ with open("data/filename.csv", newline="") as f:
 | Script | Built In | Purpose |
 |--------|----------|---------|
 | `load_data.py` | L08 | Load CSV, filter comments/blanks, convert strings to numbers |
-| `clean_data.py` | L11 | Full cleaning pipeline with audit trail (dropped rows + reasons) |
-| `clean_threats.py` | L15 | Cleaning pipeline for threat dataset |
+| `clean_data.py` | L11 | Cleaning pipeline for `u2_student_performance_data.csv` — drops logged by reason, counts must add up |
+| `clean_threats.py` | L15 | **Audit** pipeline for the threat dataset: PASS/FAIL per check, `--drill` defect mode |
 | `project_charts.py` | L16 | Three required project visualizations |
 | `analysis.md` | L16–L18 | Written analysis for each chart (audience, finding, limitation) |
